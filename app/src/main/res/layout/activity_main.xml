@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myb.fisheyetopanoramavideo.MainActivity">
+
+    <!-- Initially hidden so we can control when the SurfaceTexture gets created -->
+    <com.example.myb.fisheyetopanoramavideo.player.SphericalVideoPlayer
+        android:id="@+id/spherical_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#eee"
+        />
+</RelativeLayout>
